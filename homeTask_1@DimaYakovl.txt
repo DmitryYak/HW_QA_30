@@ -1,0 +1,88 @@
+@DimaYakovl 
+
+1) Посмотреть где я 
+   pwd 
+
+2) Создать папку 
+   mkdir homeTask1
+ 
+3) Зайти в папку 
+   cd homeTask1 
+
+4) Создать 3 папки 
+   mkdir homeTask2 homeTask3 homeTask4
+ 
+5) Зайти в любоую папку 
+   cd homeTask1 
+
+6) Создать 5 файлов (3 txt, 2 json) 
+   touch example1.txt example2.txt example3.txt example 4.json example5.json  
+
+7) Создать 3 папки  
+   mkdir dublicate_1 dublicate_2 dublicate_3 
+
+8. Вывести список содержимого папки 
+   ls –la dublicate_1 
+
+9) + Открыть любой txt файл   
+   cat example.txt 
+
+10) + написать туда что-нибудь, любой текст. 
+   cat >> example1.txt  "Hello world" 
+
+11) + сохранить и выйти.  
+   Enter Ctrl+c 
+
+12) Выйти из папки на уровень выше 
+   cd .. 
+
+13) переместить любые 2 файла, которые вы создали, в любую другую папку. 
+   mv example1.txt example4.json dublicate_1 
+
+14) скопировать любые 2 файла, которые вы создали, в любую другую папку. 
+   cp dublicate_1/example1.txt dublicate_1/example4.json dublicate_2 
+
+15) Найти файл по имени 
+   find example2.txt  или ls | grep 'example2.txt' 
+
+16) просмотреть содержимое в реальном времени (команда grep) изучите как она работает. 
+   tail  -f log example2.txt (c grep через амперсант закрывает онлайн просмотр) 
+
+17) вывести несколько первых строк из текстового файла 
+   head –3 example2.txt 
+
+18) вывести несколько последних строк из текстового файла 
+   tail –5 example2.txt 
+ 
+19) просмотреть содержимое длинного файла (команда less) изучите как она работает. 
+     Less example.txt    /my book      q 
+
+20) вывести дату и время 
+   date "+%D  %T" 
+========= 
+ 
+Задание * 
+1) Отправить http запрос на сервер. 
+http://162.55.220.72:5005/terminal-hw-request 
+"Hello!! This is your the first response from server"     
+
+[ 
+
+    "Dmitry", 
+
+    "37" 
+
+] 
+
+2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13 
+
+touch myScript.sh 
+cat >> myScript.sh 
+#!/bin/bash  
+cd homeTask1 
+mkdir homeTask5 homeTask6 homeTask7  
+cd homeTask7  
+touch example5.txt example6.txt example7.txt example8.json example9.json  
+mkdir dublicate_4 dublicate_5 dublicate_6  
+ls -la homeTask7  
+mv example5.txt example8.json dublicate_4 
