@@ -75,6 +75,6 @@ console.log ('Keep calm and look Culture channel')
 } else {
     console.log('Technical work')
 }
-
+\
 
 
